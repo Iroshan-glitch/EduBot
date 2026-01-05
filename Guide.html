@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edubot ICT | Guide</title>
+    <style>
+        body{
+            margin: 0%; 
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            background-color:#0f1724; }
+        header{
+            background-color: #0a0f24; 
+            border-bottom: 1px solid #3a435d;}
+        .heading{
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; }
+        nav ul{
+            list-style: none; 
+            display: flex;
+            flex-wrap: wrap; }
+        nav ul li{
+            margin: 0 15px; 
+            color: white ; }
+        nav ul li a{
+            color: white; 
+            text-decoration: none; 
+            font-weight: 500;}
+        nav ul li a:hover{
+            font-weight: 600;}
+        #p{
+            width: 15%; 
+            height: 15%; 
+            border-radius: 50%; 
+            margin: 2%;}
+        .content{
+            display: flex;}
+        .content h1{
+            margin-left: 5%; 
+            margin-top: auto; 
+            margin-bottom: auto; 
+            color: aqua;}
+        .first{
+            display: flex; 
+            margin-top: 3%;}
+        .first p{
+            color: aliceblue; 
+            text-align: justify; 
+            margin-top: 10%;}
+        .one2 h2{
+            color: rgb(27, 203, 209);}
+        .one1, .one2{
+            margin: 5px 30px 5px 20px; 
+            width: 100%;}
+        .one1 img{
+            border-radius: 10%; 
+            margin-top: 8%; 
+            margin-bottom: 8%; 
+            margin-left: 10%;
+            margin-right: 10%; 
+            width: 100%; 
+            max-width: 350px;
+            height: auto; 
+            border: 1px solid #4db8ff;}
+        .one1 img:hover{
+            transform:scale(1.1) rotate(2deg);}
+        .year {
+            display: flex;
+            gap: 75px;
+            margin-top: 50px;
+            margin-left: 30px;
+            flex-wrap: wrap;}
+
+        .btn1, .btn2 {
+            background: #22375a;
+            padding: 12px 25px;
+            text-align: center;
+            color: aqua;
+            font-weight: bold;
+            text-decoration: none;
+            border: 1px solid #394866;
+            border-radius: 8px;
+            transition: 0.2s;
+            cursor: pointer;}
+
+        .btn1:hover, .btn2:hover {
+            scale: 1.05;}
+
+        .footer {
+            background-color: #0a0f24;
+            color: whitesmoke;
+            padding: 0%;
+            margin-top: 1%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;}
+        .footer-container {
+            width: 100%; 
+            margin: auto; 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            gap: 3%; 
+            border-top: 1px solid #9fb4d1;}
+        .footer-section1 h4 { 
+            color: #4db8ff;}
+        .footer-section3 h4 { 
+            color: #4db8ff;}
+        .footer-section1{
+            padding-left: 5%; 
+            }
+        .footer-section2{
+            padding-left: 5%; 
+            padding-right: 5%;}
+        .footer-section2 img{
+            width: 80px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        .footer-section3{
+            padding-right: 5%; 
+            padding-left: 5%;}
+        .footer-section1 p { 
+            color: whitesmoke;}
+        .footer-section3 p { 
+            color: whitesmoke;}
+        .footer-bottom {
+            text-align: center; 
+            margin-top: 1%; 
+            padding-bottom: 1%; 
+            border-top: 0.5px solid #3a435d;}
+        .footer-bottom p { 
+            color: #9fb4d1;}
+        @media (max-width: 768px) {
+                .heading {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+    #p {
+        width: 80px;
+        height: 80px;
+    }
+
+    .first {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+     .one1 img{
+         margin: auto;
+     }
+
+    .year {
+        justify-content: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    <div class="heading">
+        <div class="content">
+        <img src="data:image/png;base64,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" id="p">
+        <h1>EduBot ICT</h1>
+        </div>
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Introduction.html">Introduction</a></li>
+            <li><a href="Pastpapers.html">PastPapers</a></li>
+            <li><a href="Guide.html">Guide</a></li>
+            <li><a href="Aboutus.html">AboutUs</a></li>
+        </ul>
+        </nav>
+    </div>
+    </header>
+    <div class="first">
+            <div class="one2">
+                <h2>Edu Bot | Guide</h2>
+                <div class="year">
+                    <a class="btn1" href="eGr12TG ICT.pdf" target="_blank">Grade 12</a>
+                    <a class="btn2" href="eGr13TG ICT.pdf" target="_blank">Grade 13</a>
+                </div>
+            </div>
+            <div class="one1">
+                <p> EduBot ගුරු මාර්ගෝපදේශ අංශය වෙත සාදරයෙන් පිළිගනිමු. මෙහිදී ඔබට පාඩම් සැලසුම්, තොරතුරු හා සන්නිවේදන තාක්ෂණ විෂය නිර්දේශ මාර්ගෝපදේශ වෙත ප්‍රවේශ විය හැක. මාර්ගෝපදේශය බාගත කිරීම සඳහා ඔබේ ශ්‍රේණිය තෝරන්න.</p>
+                <img src="GuidePage.webp">
+            </div>
+    </div>
+
+
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section1">
+            <h4>EduBot</h4>
+            <p>Your smart learning assistant for education.</p>
+        </div>
+        <div class="footer-section2">
+            <p>
+                <a class="youtube-link" href="https://www.youtube.com/@iroshaniyomal-r7p" target="_blank">
+                <img src="youtube.png" alt="YouTube">
+                </a>
+            </p>
+        </div>
+        <div class="footer-section3">
+            <h4>Contact</h4>
+            <p>Email: edubotict@gmail.com<br>Phone: +94 74 070 9159</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 EduBot. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
